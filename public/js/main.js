@@ -23,3 +23,22 @@ class Personne {
 }
 
 let maxence = new Personne ('lemaire', 'maxence', 20)
+
+class Bus {
+    constructor (personnes, caisse) {
+        this.personnes = [personnes]
+        this.caisse = caisse
+        embarquer = () => {
+            if (Personne.argent > 2.8) {
+                return (Personne.argent - 2.8)
+            } else {
+                return "Pas de bus"
+            }
+        }
+    }
+}
+
+let bus = new Bus
+
+// EXO 2
+
